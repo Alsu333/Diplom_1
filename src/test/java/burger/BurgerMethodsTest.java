@@ -1,4 +1,4 @@
-package Burger;
+package burger;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -37,8 +37,8 @@ public class BurgerMethodsTest {
     @Test
     public void addIngredientsTest(){
         Burger burger = new Burger();
-        burger.addIngredient(new Ingredient(type,name,price));
-        Assert.assertNotNull("Null",burger.ingredients.size());
+        burger.addIngredient(new Ingredient(type, name, price));
+        assertFalse("Что-то не так", burger.ingredients.isEmpty());
     }
     @Test
     public void removeIngredientTest(){
@@ -69,8 +69,9 @@ public class BurgerMethodsTest {
     public void getPriceTest(){
         Burger burger4 = new Burger();
         burger4.setBuns(bun);
-        Mockito.when(bun.getPrice()).thenReturn(1.0F);
+        Mockito.when(bun.getPrice()).thenReturn(1F);
         burger4.addIngredient(new Ingredient(type,name,price));
-        Assert.assertNotNull("Fail",burger4.getPrice());
+        float expected = (1F*2)+price;
+        assertEquals(expected,burger4.getPrice(),0.05);
     }
 }

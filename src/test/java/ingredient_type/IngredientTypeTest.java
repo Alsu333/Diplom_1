@@ -1,4 +1,4 @@
-package IngredientType;
+package ingredient_type;
 
 import org.junit.Test;
 import praktikum.IngredientType;
