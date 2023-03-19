@@ -23,14 +23,14 @@ public class BunPositiveTest {
         };
     }
     @Test
-    public void bunTest() {
+    public void getNameTest() {
         Bun bun = new Bun(name, price);
         String expectedName = name;
         String actualName = bun.getName();
         Assert.assertEquals(expectedName, actualName);
     }
     @Test
-    public void bunPriceTest(){
+    public void getPriceTest(){
         Bun bun = new Bun(name, price);
         Float expectedFloat = price;
         Float actualPrice = bun.getPrice();

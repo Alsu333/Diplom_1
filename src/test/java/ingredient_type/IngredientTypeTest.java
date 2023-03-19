@@ -6,11 +6,11 @@ import static org.junit.Assert.assertNotNull;
 
 public class IngredientTypeTest {
     @Test
-    public void fillingNotNull() {
+    public void fillingExistTest() {
         assertNotNull("Fail", IngredientType.FILLING);
     }
     @Test
-    public void sauceNotNull(){
+    public void sauceExistTest(){
         assertNotNull("Fail", IngredientType.SAUCE);
     }
 }

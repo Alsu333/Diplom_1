@@ -29,20 +29,20 @@ public class IngredientTest {
         };
     }
     @Test
-    public void ingredientTypeTest(){
+    public void getCorrectIngredientTypeTest(){
         Ingredient ingredient1 = new Ingredient(type,name,100F);
         Ingredient ingredient = Mockito.spy(ingredient1);
         assertEquals("Fail",type,ingredient.getType());
     }
     @Test
-    public void ingredientNameTest(){
+    public void getCorrectNameTest(){
         Ingredient ingredient1 = new Ingredient(type,name,price);
         Ingredient ingredient = Mockito.spy(ingredient1);
         String actualName = ingredient.getName();
         assertEquals("Fail",name,actualName);
     }
     @Test
-    public void ingredientPriceTest(){
+    public void getCorrectPriceTest(){
         Ingredient ingredient1 = new Ingredient(type,name,price);
         Ingredient ingredient = Mockito.spy(ingredient1);
         Float actualPrice = ingredient.getPrice();
