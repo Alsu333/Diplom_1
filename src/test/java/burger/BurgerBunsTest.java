@@ -14,7 +14,7 @@ public class BurgerBunsTest {
     @Mock
     Bun bun;
     @Test
-    public void SetBunNameTest(){
+    public void setBunNameTest(){
         Burger burger = new Burger();
         burger.setBuns(bun);
         String expectedNameBun = "hot bun";

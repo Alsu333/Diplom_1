@@ -19,7 +19,7 @@ public class IngredientTest {
         this.type = type;
     }
     @Parameterized.Parameters(name = "ingredients: {0},{1},{2}")
-    public static Object[] Data() {
+    public static Object[] data() {
         return new Object[][]{
                 {IngredientType.SAUCE, "hot sauce", 100},
                 {IngredientType.SAUCE, "sour cream", 50},
@@ -29,20 +29,20 @@ public class IngredientTest {
         };
     }
     @Test
-    public void IngredientTypeTest(){
+    public void ingredientTypeTest(){
         Ingredient ingredient1 = new Ingredient(type,name,100F);
         Ingredient ingredient = Mockito.spy(ingredient1);
         assertEquals("Fail",type,ingredient.getType());
     }
     @Test
-    public void IngredientNameTest(){
+    public void ingredientNameTest(){
         Ingredient ingredient1 = new Ingredient(type,name,price);
         Ingredient ingredient = Mockito.spy(ingredient1);
         String actualName = ingredient.getName();
         assertEquals("Fail",name,actualName);
     }
     @Test
-    public void IngredientPriceTest(){
+    public void ingredientPriceTest(){
         Ingredient ingredient1 = new Ingredient(type,name,price);
         Ingredient ingredient = Mockito.spy(ingredient1);
         Float actualPrice = ingredient.getPrice();

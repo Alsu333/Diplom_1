@@ -24,7 +24,7 @@ public class BurgerMethodsTest {
     }
     Bun bun = mock(Bun.class);
     @Parameterized.Parameters(name = "ingredients: {0},{1},{2}")
-    public static Object[] Data() {
+    public static Object[] data() {
         return new Object[][]{
                 {IngredientType.SAUCE, "hot sauce", 100},
                 {IngredientType.SAUCE, "sour cream", 200},

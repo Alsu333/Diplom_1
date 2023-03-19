@@ -15,7 +15,7 @@ public class BunNegativeTest {
         this.price = price;
     }
     @Parameterized.Parameters(name = "buns: {0},{1}")
-    public static Object[] Data() {
+    public static Object[] data() {
         return new Object[][]{
                 {" bun", 0},
                 {"", -2000000},
@@ -23,14 +23,14 @@ public class BunNegativeTest {
         };
     }
     @Test
-    public void BunNameTest() {
+    public void bunNameTest() {
         Bun bun = new Bun(name, price);
         String actualName = bun.getName();
         String expectedName = name;
         Assert.assertEquals(expectedName, actualName);
     }
     @Test
-    public void BunPriceTest(){
+    public void bunPriceTest(){
         Bun bun = new Bun(name, price);
         Float expectedPrice = price;
         Float actualPrice = bun.getPrice();
