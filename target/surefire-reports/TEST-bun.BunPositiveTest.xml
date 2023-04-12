@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="Burger.BurgerNegativeTest" time="0.802" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="bun.BunPositiveTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,5 +62,10 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Burger.BurgerNegativeTest" name="getPriceTest" time="0.802"/>
+  <testcase classname="bun.BunPositiveTest" name="getPriceTest[buns: black bun,100]" time="0"/>
+  <testcase classname="bun.BunPositiveTest" name="getNameTest[buns: black bun,100]" time="0"/>
+  <testcase classname="bun.BunPositiveTest" name="getPriceTest[buns: white bun,200]" time="0"/>
+  <testcase classname="bun.BunPositiveTest" name="getNameTest[buns: white bun,200]" time="0"/>
+  <testcase classname="bun.BunPositiveTest" name="getPriceTest[buns: red bun,300]" time="0"/>
+  <testcase classname="bun.BunPositiveTest" name="getNameTest[buns: red bun,300]" time="0"/>
 </testsuite>
