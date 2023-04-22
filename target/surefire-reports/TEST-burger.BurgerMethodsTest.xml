@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="Burger.BurgerPositiveTest" time="0.012" errors="0" skipped="0">
+<testsuite tests="30" failures="0" name="burger.BurgerMethodsTest" time="0.016" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,7 +62,34 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Burger.BurgerPositiveTest" name="moveIngredientTest" time="0.008"/>
-  <testcase classname="Burger.BurgerPositiveTest" name="AddIngredientsTest" time="0.002"/>
-  <testcase classname="Burger.BurgerPositiveTest" name="removeIngredientTest" time="0.002"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getPriceTest[ingredients: SAUCE,hot sauce,100]" time="0.003"/>
+  <testcase classname="burger.BurgerMethodsTest" name="addIngredientsTest[ingredients: SAUCE,hot sauce,100]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="moveIngredientTest[ingredients: SAUCE,hot sauce,100]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="removeIngredientTest[ingredients: SAUCE,hot sauce,100]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getReceiptTest[ingredients: SAUCE,hot sauce,100]" time="0.003"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getPriceTest[ingredients: SAUCE,sour cream,200]" time="0.001"/>
+  <testcase classname="burger.BurgerMethodsTest" name="addIngredientsTest[ingredients: SAUCE,sour cream,200]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="moveIngredientTest[ingredients: SAUCE,sour cream,200]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="removeIngredientTest[ingredients: SAUCE,sour cream,200]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getReceiptTest[ingredients: SAUCE,sour cream,200]" time="0.002"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getPriceTest[ingredients: FILLING,cutlet,100]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="addIngredientsTest[ingredients: FILLING,cutlet,100]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="moveIngredientTest[ingredients: FILLING,cutlet,100]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="removeIngredientTest[ingredients: FILLING,cutlet,100]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getReceiptTest[ingredients: FILLING,cutlet,100]" time="0.001"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getPriceTest[ingredients: SAUCE,chili sauce,300]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="addIngredientsTest[ingredients: SAUCE,chili sauce,300]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="moveIngredientTest[ingredients: SAUCE,chili sauce,300]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="removeIngredientTest[ingredients: SAUCE,chili sauce,300]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getReceiptTest[ingredients: SAUCE,chili sauce,300]" time="0.001"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getPriceTest[ingredients: SAUCE,,0]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="addIngredientsTest[ingredients: SAUCE,,0]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="moveIngredientTest[ingredients: SAUCE,,0]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="removeIngredientTest[ingredients: SAUCE,,0]" time="0.001"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getReceiptTest[ingredients: SAUCE,,0]" time="0.001"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getPriceTest[ingredients: SAUCE,,-100]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="addIngredientsTest[ingredients: SAUCE,,-100]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="moveIngredientTest[ingredients: SAUCE,,-100]" time="0.001"/>
+  <testcase classname="burger.BurgerMethodsTest" name="removeIngredientTest[ingredients: SAUCE,,-100]" time="0"/>
+  <testcase classname="burger.BurgerMethodsTest" name="getReceiptTest[ingredients: SAUCE,,-100]" time="0.002"/>
 </testsuite>

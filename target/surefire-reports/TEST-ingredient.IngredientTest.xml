@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="Ingredient.IngredientTest" time="0.25" errors="0" skipped="0">
+<testsuite tests="15" failures="0" name="ingredient.IngredientTest" time="0.044" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,7 +62,19 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Ingredient.IngredientTest" name="IngredientTypeTest" time="0.249"/>
-  <testcase classname="Ingredient.IngredientTest" name="IngredientPriceTest" time="0"/>
-  <testcase classname="Ingredient.IngredientTest" name="IngredientNameTest" time="0.001"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectIngredientTypeTest[ingredients: SAUCE,hot sauce,100]" time="0.039"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectPriceTest[ingredients: SAUCE,hot sauce,100]" time="0"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectNameTest[ingredients: SAUCE,hot sauce,100]" time="0.001"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectIngredientTypeTest[ingredients: SAUCE,sour cream,50]" time="0"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectPriceTest[ingredients: SAUCE,sour cream,50]" time="0"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectNameTest[ingredients: SAUCE,sour cream,50]" time="0.001"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectIngredientTypeTest[ingredients: FILLING,cutlet,100]" time="0"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectPriceTest[ingredients: FILLING,cutlet,100]" time="0"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectNameTest[ingredients: FILLING,cutlet,100]" time="0"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectIngredientTypeTest[ingredients: SAUCE,,0]" time="0"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectPriceTest[ingredients: SAUCE,,0]" time="0.001"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectNameTest[ingredients: SAUCE,,0]" time="0"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectIngredientTypeTest[ingredients: SAUCE,,-100]" time="0"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectPriceTest[ingredients: SAUCE,,-100]" time="0"/>
+  <testcase classname="ingredient.IngredientTest" name="getCorrectNameTest[ingredients: SAUCE,,-100]" time="0.002"/>
 </testsuite>
